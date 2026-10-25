@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Menu } from "lucide-react";
 import { cn } from "cn";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -39,9 +40,20 @@ export function Navbar() {
         className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8"
         aria-label="Navigasi utama"
       >
-        {/* Sisi kiri: brand */}
-        <Link href="/" className="text-lg font-bold tracking-tight">
-          IT Babel
+        {/* Sisi kiri: brand (Updated dengan Logo) */}
+        <Link 
+          href="/" 
+          className="text-lg font-bold tracking-tight flex items-center gap-2"
+        >
+          <Image 
+            src="/logo.png" 
+            alt="Logo IT Babel" 
+            width={28} // Anda bisa sesuaikan ukurannya (misal: 24, 28, atau 32)
+            height={28} 
+            className="object-contain"
+            priority // Prioritaskan loading gambar karena ini elemen LCP/Navbar
+          />
+          <span>IT Babel</span>
         </Link>
 
         {/* Sisi tengah: menu desktop */}
