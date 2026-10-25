@@ -47,14 +47,14 @@ const officeInfo: OfficeInfo[] = [
   {
     icon: Mail,
     label: "Email",
-    value: "contact@itbabel.com",
-    href: "mailto:contact@itbabel.com",
+    value: "babeltechnoscript@gmail.com",
+    href: "mailto:babeltechnoscript@gmail.com",
   },
   {
     icon: Phone,
     label: "Telepon / WhatsApp",
-    value: "+62 812-3456-7890",
-    href: "tel:+6281234567890",
+    value: "+62 813-7756-5004",
+    href: "tel:+6281377565004",
   },
   {
     icon: Clock,
